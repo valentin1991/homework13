@@ -22,3 +22,27 @@ x.innerHTML = "Ширина окна: " + w + ", Высота: " + h + ".";
 // 3) Напишите программу на JavaScript, которая найдет все жирные слова в абзаце, что представлен ниже. Жирные слова должны становиться красного цвета при наведении на сам абзац. Абзац:
 // Простой пример небольшого текста, в котором есть выделенные жирным слова.
 // При наведении жирные слова стают красного цвета, а когда курсор забирается, то их цвет возвращается обратно.
+let f =document.getElementById("first")
+let s =document.getElementById("second")
+let t =document.getElementById("third")
+
+f.addEventListener("mouseover", function(){
+  f.color = "red";
+});
+f.addEventListener("mouseout", function(){
+    f.color = "black";
+});
+
+s.addEventListener("mouseover", function(){
+  s.color = "red";
+});
+s.addEventListener("mouseout", function(){
+    s.color = "black";
+});
+
+t.addEventListener("mouseover", function(){
+  t.color = "red";
+});
+t.addEventListener("mouseout", function(){
+    t.color = "black";
+});
