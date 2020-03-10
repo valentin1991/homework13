@@ -46,3 +46,20 @@ t.addEventListener("mouseover", function(){
 t.addEventListener("mouseout", function(){
     t.color = "black";
 });
+
+
+// 4) Ниже пример HTML-файла с кнопкой отправки. Напишите функцию JavaScript, чтобы получить значения атрибутов href, hreflang, rel, target и type указанной ссылки.
+
+function getAttributes(){
+  var x = document.getElementsByTagName("a")[0].getAttribute("href");
+  var y = document.getElementsByTagName("a")[0].getAttribute("hreflang");
+  var z = document.getElementsByTagName("a")[0].getAttribute("rel");
+  var j = document.getElementsByTagName("a")[0].getAttribute("target");
+  var i = document.getElementsByTagName("a")[0].getAttribute("type");
+
+  document.getElementById("lis").innerHTML = x + "<br>" + y + "<br>" + z + "<br>" + j + "<br>" + i;
+  // document.getElementById("lis").innerHTML = x + "\n" + y + "\n" + z + "\n" + j + "\n" + i;
+//   document.getElementById("lis").innerHTML = x;
+//   document.getElementById("lis").innerHTML += y;
+
+}
